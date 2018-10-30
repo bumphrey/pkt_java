@@ -1,0 +1,17 @@
+ID: pkt_java
+_schema-version: '2.0'
+description: Test java Module
+version: 0.0.1
+
+modules:
+ - name: swa
+   type: java
+   path: swa
+   parameters:
+      memory: 512M
+   provides:
+    - name: swa_api
+      properties:
+         url: ${default-url}
+
+ 
